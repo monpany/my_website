@@ -1,3 +1,7 @@
 <template>
-    <h1 class="text-red-200">Hello bbe</h1>
+  <PortfolioBanner />
 </template>
+
+<script setup lang="ts">
+import PortfolioBanner from './components/PortfolioBanner.vue'
+</script>

@@ -1,9 +1,14 @@
 import './assets/main.css'
 
-
 import { createApp } from 'vue'
-
-import App from './App.vue'
+import PortfolioBanner from './components/PortfolioBanner.vue'
 import router from './router'
+import App from './App.vue'
 
-createApp(App).use(router).mount('#app')
+
+const app = createApp(App)
+
+// Register global components
+app.component('PortfolioBanner', PortfolioBanner)
+
+app.mount('#app')
